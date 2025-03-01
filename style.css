@@ -1,16 +1,19 @@
 body {
 	font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to bottom, #d1bc96, #1f1a14); /* Degradê do topo para baixo */
 }
 
 header {
-	background: #BBBBBB;
-	padding: 20px 0;
+    background:#d1bc96
+	padding: 0px 0;
+	margin:0px;
 }
 
 .caixa {
 	position: relative;
 	width: 940px;
 	margin: 0 auto;
+	background-color: #d1bc96;
 }
 
 nav {
@@ -21,7 +24,7 @@ nav {
 
 nav li {
 	display: inline;
-	margin: 0 0 0 15px;
+	margin: 0 0 0 0px;
 }
 
 nav a {
@@ -42,6 +45,29 @@ nav a:hover {
 	margin: 0 auto;
 	padding: 50px 0;
 }
+
+.botao-container {
+    text-align: center; /* Centraliza o botão horizontalmente */
+    margin-top: 40px; /* Espaço acima do botão */
+}
+
+.botao-instagram {
+    display: inline-block;
+    background-color: #C78C19; /* Cor dourada/laranja, pode ajustar conforme necessário */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 30px;
+    text-decoration: none; /* Remove o sublinhado do link */
+    border-radius: 30px; /* Bordas arredondadas */
+    transition: background-color 0.3s; /* Transição suave na cor */
+    margin:10px;
+}
+
+.botao-instagram:hover {
+    background-color: #C39C18; /* Cor mais escura no hover */
+}
+
 
 .produtos li {
 	display: inline-block;
@@ -84,8 +110,10 @@ nav a:hover {
 
 footer {
 	text-align: center;
-	background: #000000;
 	padding: 40px 0;
+	margin: 0;
+    background:#1f1a14
+    
 }
 
 .copyright {
@@ -95,11 +123,12 @@ footer {
 }
 
 main {
+    background:#d1bc96;
 	
 }
 
 form {
-	margin: 40px 0;
+	margin: 0px 0;
 }
 
 form label, form legend {
@@ -119,22 +148,7 @@ form label, form legend {
 	margin: 20px 0;
 }
 
-.enviar {
-	width:40%;
-	padding: 15px 0;
-	background: orange;
-	color: white;
-	font-weight: bold;
-	font-size: 18px;
-	border: none;
-	border-radius: 5px;
-	transition: 1s all;
-	cursor: pointer;
-}
 
-.enviar:hover {
-	background: darkorange;
-	transform: scale(1.2);
 }
 
 table {
@@ -142,7 +156,7 @@ table {
 }
 
 thead {
-	background: #555555;
+
 	color: white;
 	font-weight: bold;
 }
@@ -152,10 +166,22 @@ td, th {
 	padding: 8px 15px;
 }
 
+/* Estilo para a logo */
+.logo-imagem {
+    max-width: 10%; /* Você pode ajustar esse valor para o tamanho desejado */
+    height: auto;
 
 /* css da página inicial */
 .banner {
-	width:100%;
+
+    width: 2000%; /* Ajuste para reduzir a largura do banner */
+    height: auto;   /* Mantém a altura proporcional */
+    display: block; /* Remove qualquer espaço indesejado abaixo da imagem */
+    margin: 0 auto; /* Centraliza a imagem */
+}
+
+}
+
 }
 
 .titulo-principal {
@@ -167,13 +193,14 @@ td, th {
 
 .principal {
 	padding: 3em 0;
-	background: #FEFEFE;
 	width: 940px;
 	margin: 0 auto;
+    background:linear-gradient (#eeeee4,#1f1a14);
 }
 
 .principal p {
 	margin: 0 0 1em;
+	background:linear-gradient (#eeeee4,#1f1a14);
 }
 
 .principal strong {
@@ -192,7 +219,7 @@ td, th {
 
 .mapa {
 	padding: 3em 0;
-	background: linear-gradient(#FEFEFE, #888888);
+	background: linear-gradient(#1f1a14, #888888);
 }
 
 .mapa-conteudo {
@@ -207,13 +234,22 @@ td, th {
 
 .beneficios {
 	padding: 3em 0;
-	background: #888888;
+	background: linear-gradient(#d1bc96, #1f1a14);
+    align-content: center;
+    margin: 0; /* Remover margens extras */
+    text-align: center; /* Centraliza o conteúdo dentro dessa seção */
 }
 
 .conteudo-beneficios {
 	width: 640px;
+    align-self: center;
 	margin: 0 auto;
+	max-width: 500px; /* Ajuste para não ficar muito largo em telas grandes */
+    display: inline-block;
+    vertical-align: top;
+    text-align: center; /* Garantir que o texto na lista de benefícios esteja alinhado à esquerda */
 }
+
 
 .lista-beneficios {
 	width: 30%;
